@@ -24,19 +24,14 @@ Training a Neural Network could be an hard job for your machine.
 It has been very difficult with only CPU, but if you invest some time in learning and -you got hardware-, with GPU it is way better and faster. The job is not too much easy: I messed up with the NVIDIA docs, but in the end I've found [this video](https://www.youtube.com/watch?v=hHWkvEcDBO0) enlighting. However you can find some infos on NVIDIA, despite for example my GPU does not appear in the CUDA enabled, but it is.
 However some infos:
 
-+---------------+
-| sdf           |
-+---------------+
 
-
-**Overall**<br>
-Project of sub-project about kaggle.
-**How it works**<br>
-project titanic
-
-
-**Environment**<br>
 Python 3<br>
 Win 11 machine<br>
-AMD Ryzen 400 <br>
+AMD Ryzen 5 400 series <br>
 NVidia GEFORCE GTX 1650<br>
+32GB RAM<br>
+
+
+
+
+
