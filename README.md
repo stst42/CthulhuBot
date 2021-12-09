@@ -36,12 +36,15 @@ You'll find a couple of folders you'll need to know:
  - [data](https://github.com/stst42/GITGenerativeNetwork/tree/main/data) where the Lovecraft .txt, with Lovecraft written are stored. I've taken them from [this repo](https://github.com/urschrei/lovecraft/blob/master/lovecraft.txt)
  - [scripts](https://github.com/stst42/GITGenerativeNetwork/tree/main/scripts) where you can find scripts.
 
-  data
-    |-> lovecraft.txt
-  scripts
-    |-> chtulhubot.py
-    |-> chtulhubot.py
-
+main  
+  |->data
+     |-> lovecraft.txt
+  |->scripts
+     |-> chtulhubot.py
+     |-> chtulhubot.py
+  |-> weights-improvement-bigger-35-1.4846.hdf5
+  |-> weights-improvement-v2-40-1.4714.hdf5
+  |-> weights-improvement-v2-01-2.2795.hdf5
 
 # scripts
 Both my scripts are based on some web sources like those:
@@ -50,6 +53,8 @@ Both my scripts are based on some web sources like those:
 
 You can read well the code on the scripts: the main differences between the two, is that the second has some different setting in epoch and batch and some strata. I've encountered some problem in memory allocation changeing other params.
 
+# weights-improvement-*
+Those are already weights of the chtulhubots. The bigger is for the first, the V2 are the first and last epochs weights, with the rispective loss function value.
 
 # some results
 Here some result made by chtulhubot2.py.
@@ -59,6 +64,7 @@ Starting from **this text** and 1.4 temperature, 400 characters:
 **Chtulhu was sitting in the midst** of a place and the continued the allost state of the continuous stone of the strange continuous street the birds of the carven station of the confidence of the state of the single of the dark and seemed to do all the distance and seemed to say that the ancient sea of the desert some of the great part of the street which had done to the sea of the dark hearth of the sense of the house of the dese... ("..." added by me).
 
 Starting from **this text** and 1.5 temperature, 400 characters:
+
 **The creature in the darkness**  companions of the concecled and considerable and carefully about the great walls of the conpession the north hands and carefully and because of the dark person of the single care to the stars of the strange continue of the right or the street of the free with the oreer of the person of the spuare and the conception of the sea of the strange suaterrene and carven porsible and an eleer singular gr... ("..." added by me).
 
 Despite the lack of punctuation, and techically a kind of gibberish (id it you, Zadok Allen?), the words are almost all correct (above all in the first example), and I think that it seems to give the oppressive, oniric and weird athmosphere of H.P.Lovecraft novels.
