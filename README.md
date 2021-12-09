@@ -25,11 +25,12 @@ It has been very difficult with only CPU, but if you invest some time in learnin
 However some infos:
 
 
-Python 3<br>
-Win 11 machine<br>
-AMD Ryzen 5 400 series <br>
-NVidia GEFORCE GTX 1650<br>
-32GB RAM<br>
+- Python 3<br>
+- PyCharm community edition <br>
+- Windows 11 machine<br>
+- AMD Ryzen 5 400 series <br>
+- NVidia GEFORCE GTX 1650<br>
+- 32GB RAM<br>
 
 # Folder structure
 You'll find a couple of folders you'll need to know:
