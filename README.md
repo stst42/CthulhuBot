@@ -15,3 +15,5 @@ project titanic
 **Environment**<br>
 Python 3<br>
 Win 11 machine<br>
+AMD Ryzen 400 <br>
+NVidia GEFORCE GTX 1650<br>
