@@ -39,10 +39,10 @@ You'll find a couple of folders you'll need to know:
 
 main  
   |->data<br>
-     |-> lovecraft.txt<br>
+  ||-> lovecraft.txt<br>
   |->scripts<br>
-     |-> chtulhubot.py<br>
-     |-> chtulhubot.py<br>
+  ||-> chtulhubot.py<br>
+  ||-> chtulhubot.py<br>
   |-> weights-improvement-bigger-35-1.4846.hdf5<br>
   |-> weights-improvement-v2-40-1.4714.hdf5<br>
   |-> weights-improvement-v2-01-2.2795.hdf5<br>
