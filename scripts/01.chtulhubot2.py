@@ -80,9 +80,8 @@ start = np.random.randint(0, len(dataX)-1)
 pattern = dataX[start]
 
 # test with invented test
-text='chtulhu was sitting in the midst'
+text='the creature in the darkness'
 pattern = [char_to_int[char] for char in text]
-temperature = 1.4
 
 
 # helper function to sample an index from a probability array
@@ -94,10 +93,10 @@ def sample(preds,temperature):
     probas = np.random.multinomial(y.shape[1],preds[0],1)
     return np.argmax(probas)
 
-temperature = 1.7
+temperature = 1.5
 new_text = []
 # predict
-for i in range(200):
+for i in range(400):
     # reshape input
     x = np.reshape(pattern, (1, len(pattern), 1))
     x = x / float(n_vocab)
