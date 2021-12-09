@@ -3,6 +3,7 @@
 # https://forums.developer.nvidia.com/t/does-gtx-1050ti-or-1650-for-notebook-support-tensorflow-gpu/77384/9
 # https://stackoverflow.com/questions/47125723/keras-lstm-for-text-generation-keeps-repeating-a-line-or-a-sequence
 
+
 # Load what is needed
 import numpy as np
 from keras.models import Sequential
@@ -15,7 +16,7 @@ from keras.utils import np_utils
 
 # load and preprocess
 # load data
-filename = "/data/lovecraft.txt"
+filename = "C:/Users/st42/Documents/GitHub/GITGenerativeNetwork/data/lovecraft.txt"
 raw_text = open(filename, 'r', encoding='latin-1').read()
 # to lower and replace double a capo
 raw_text = raw_text.lower()
@@ -32,7 +33,7 @@ n_chars = len(raw_text)
 n_vocab = len(chars)
 
 # prepare the dataset of input to output pairs encoded as integers
-seq_length = 200
+seq_length = 100
 dataX = []
 dataY = []
 for i in range(0, n_chars - seq_length, 1):
@@ -55,10 +56,8 @@ y = np_utils.to_categorical(dataY)
 model = Sequential()
 model.add(LSTM(256, input_shape=(X.shape[1], X.shape[2]), return_sequences=True))
 model.add(Dropout(0.2))
-model.add(LSTM(300))
-model.add(Dropout(0.4))
-model.add(LSTM(100))
-model.add(Dropout(0.5))
+model.add(LSTM(256))
+model.add(Dropout(0.1))
 model.add(Dense(y.shape[1], activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 
@@ -68,10 +67,10 @@ checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only
 callbacks_list = [checkpoint]
 
 # fit the model
-model.fit(X, y, epochs=35, batch_size=128, callbacks=callbacks_list)
+model.fit(X, y, epochs=40, batch_size=130, callbacks=callbacks_list)
 
 # load the network weights
-filename = "weights-improvement-bigger-35-1.4846.hdf5"
+filename = "weights-improvement-v2-40-1.4714.hdf5"
 model.load_weights(filename)
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 
@@ -81,7 +80,7 @@ start = np.random.randint(0, len(dataX)-1)
 pattern = dataX[start]
 
 # test with invented test
-text='those big mountains and cold'
+text='chtulhu was sitting in the midst'
 pattern = [char_to_int[char] for char in text]
 temperature = 1.4
 
@@ -95,6 +94,7 @@ def sample(preds,temperature):
     probas = np.random.multinomial(y.shape[1],preds[0],1)
     return np.argmax(probas)
 
+temperature = 1.7
 new_text = []
 # predict
 for i in range(200):

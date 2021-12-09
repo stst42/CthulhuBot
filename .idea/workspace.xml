@@ -32,6 +32,11 @@
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="Python" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\st42\Documents\GitHub\GITGenerativeNetwork\scripts" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="first_LSTM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="GITGenerativeNetwork" />
