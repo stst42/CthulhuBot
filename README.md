@@ -38,14 +38,14 @@ You'll find a couple of folders you'll need to know:
  - [scripts](https://github.com/stst42/GITGenerativeNetwork/tree/main/scripts) where you can find scripts.
 
 main  
-  |->data
-     |-> lovecraft.txt
-  |->scripts
-     |-> chtulhubot.py
-     |-> chtulhubot.py
-  |-> weights-improvement-bigger-35-1.4846.hdf5
-  |-> weights-improvement-v2-40-1.4714.hdf5
-  |-> weights-improvement-v2-01-2.2795.hdf5
+  |->data<br>
+     |-> lovecraft.txt<br>
+  |->scripts<br>
+     |-> chtulhubot.py<br>
+     |-> chtulhubot.py<br>
+  |-> weights-improvement-bigger-35-1.4846.hdf5<br>
+  |-> weights-improvement-v2-40-1.4714.hdf5<br>
+  |-> weights-improvement-v2-01-2.2795.hdf5<br>
 
 # scripts
 Both my scripts are based on some web sources like those:
