@@ -16,10 +16,17 @@ I am a fan of H.P.Lovecraft and I think I've read almost every of his works: so,
 
 So Here we go.
 
+# Purpose of this wall of text
+In this write up I'm going to write a kind of diary about what I am doing.
 
 # Some infos about hardware and software
 Training a Neural Network could be an hard job for your machine.
-It has been very difficult with only CPU, but if you invest some time in learning and you got hardware, with GPU it is way better and faster. The job is not too much easy: I messed up with the NVIDIA docs, but in the end I've found [this video](https://www.youtube.com/watch?v=hHWkvEcDBO0) enlighting.
+It has been very difficult with only CPU, but if you invest some time in learning and -you got hardware-, with GPU it is way better and faster. The job is not too much easy: I messed up with the NVIDIA docs, but in the end I've found [this video](https://www.youtube.com/watch?v=hHWkvEcDBO0) enlighting. However you can find some infos on NVIDIA, despite for example my GPU does not appear in the CUDA enabled, but it is.
+However some infos:
+
++---------------+
+| sdf           |
++---------------+
 
 
 **Overall**<br>
