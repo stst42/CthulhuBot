@@ -1,5 +1,5 @@
 # GITGenerativeNetwork
-Repository to study Generative Deep Learning
+Repository for a generative network for a H.P.Lovecraft text, to study Generative Text Networks.
 
 **Author**<br>
 stst42
