@@ -34,12 +34,10 @@ However some infos:
 
 # Folder structure
 You'll find a couple of folders you'll need to know:
- - [data](https://github.com/stst42/GITGenerativeNetwork/tree/main/data) where the Lovecraft .txt, with Lovecraft written are stored. I've taken them from [this repo](https://github.com/urschrei/lovecraft/blob/master/lovecraft.txt)
+ - the data are from [this repo](https://github.com/urschrei/lovecraft/blob/master/lovecraft.txt)
  - [scripts](https://github.com/stst42/GITGenerativeNetwork/tree/main/scripts) where you can find scripts.
 
 main  
-  |->data<br>
-  ||-> lovecraft.txt<br>
   |->scripts<br>
   ||-> chtulhubot.py<br>
   ||-> chtulhubot.py<br>
