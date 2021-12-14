@@ -12,16 +12,19 @@ from keras.layers import Dropout
 from keras.layers import LSTM
 from keras.callbacks import ModelCheckpoint
 from keras.utils import np_utils
-
+import requests
 
 # load and preprocess
 # load data
-filename = "C:/Users/st42/Documents/GitHub/GITGenerativeNetwork/data/lovecraft.txt"
-raw_text = open(filename, 'r', encoding='latin-1').read()
+url = 'https://raw.githubusercontent.com/urschrei/lovecraft/master/lovecraft.txt'
+url = requests.get(url)
+
+raw_text = url.content
+raw_text = raw_text.decode("latin-1")
+
 # to lower and replace double a capo
 raw_text = raw_text.lower()
 raw_text = raw_text.replace('\n\n', '')
-
 
 # create mapping of unique chars to integers
 chars = sorted(list(set(raw_text)))
@@ -115,4 +118,3 @@ for i in range(400):
     new_text.append(result)
 
 ''.join(new_text)
-
